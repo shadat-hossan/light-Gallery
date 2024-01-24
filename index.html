@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-autoplay.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-rotate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-zoom.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-pager.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-comments.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-relative-caption.min.css"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gallery">
+      <a
+        data-lg-size="1600-1067"
+        href="./img/01_BUET Register Building.jpg"
+        data-lg-tumbnail="./img/01_BUET Register Building.jpg"
+        data-sub-html="<p>The Image is So Beyoutiful 1</p>"
+      >
+        <img alt="layers of blue." src="./img/01_BUET Register Building.jpg" />
+      </a>
+      <a
+        data-lg-size="1600-2400"
+        href="img/02_Martyred Intellectuals Memorial, Dhaka.jpg"
+        data-lg-tumbnail="img/02_Martyred Intellectuals Memorial, Dhaka.jpg"
+        data-sub-html="<p>The Image is So Beyoutiful 2</p>"
+      >
+        <img src="img/02_Martyred Intellectuals Memorial, Dhaka.jpg" />
+      </a>
+      <a
+        href="img/04_Barisal Oxford Mission Church.jpg"
+        data-lg-size="1600-2400"
+        data-lg-tumbnail="img/04_Barisal Oxford Mission Church.jpg"
+        data-sub-html="<p>The Image is So Beyoutiful 3</p>"
+      >
+        <img src="img/04_Barisal Oxford Mission Church.jpg" />
+      </a>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/autoplay/lg-autoplay.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/lg-zoom/lg-fullscreen.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/pager/lg-pager.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/comment/lg-comment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/relativeCaption/lg-relative-caption.min.js"></script>
+
+  <script>
+    const gallery = document.getElementById("gallery");
+    lightGallery(gallery, {
+      controls: true,
+      counter: true,
+      download: true,
+      plugins: [
+        lgAutoplay,
+        lgRotate,
+        lgZoom,
+        lgShare,
+
+        lgComment,
+        lgRelativeCaption,
+      ],
+    });
+  </script>
+</html>
